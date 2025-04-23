@@ -350,8 +350,8 @@ header {
 .btn_bonus:focus,
 .btn_bonus:hover {
     animation: none;
-    transform: scale(1.1);
-    background-color: var(--color-accent-dark);
+    box-shadow: 0 4px 0 0 var(--color-accent-dark), 0 8px 5px 0 var(--color-shadow-light), inset 0 20px 20px -4px var(--color-shadow-light);
+    scale: 1.05;
 }
 
 
