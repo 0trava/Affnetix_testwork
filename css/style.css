@@ -100,10 +100,6 @@
 
   /* HEADER NAVIGATION */
 
-  .header-nav {
-
-  }
-
   .header-nav__link {
     font-family: Muller, sans-serif;
     font-size: 16px;
@@ -118,7 +114,7 @@
   }
 
   .header-nav__link:hover {
-    color: #fe284a; 
+    color: #7883ab;
   }
 
 
@@ -135,7 +131,6 @@
 
   .btn {
     align-items: center;
-    /* background-color: #4d5a85; */
     border: none;
     border-radius: 50px;
     box-sizing: border-box;
@@ -190,3 +185,108 @@
     box-shadow: inset 0 2px 0 0 #871628, inset 0 0 0 20px #0003;
     transform: translateY(4px);
   }
+
+
+
+
+  /* CONTENT */
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin-top: 100px;
+  }
+
+  /* CONTENT адаптивність*/
+  @media (max-width: 1200px) {
+    .main-content {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .main-content {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: auto;
+      padding: 1rem;
+      gap: 0.5rem;
+    }
+
+  }
+
+  /* CONTENT Title */
+
+  .page-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .intro-text{
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align:justify; /* Выравнивание текста по центру */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+
+
+  /* CONTENT Banner */
+
+  .banner-section {
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон */
+    backdrop-filter: blur(10px); /* Размытие заднего фона */
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  .banner-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .bonus-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
