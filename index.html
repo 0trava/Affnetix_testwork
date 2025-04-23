@@ -23,21 +23,30 @@
     <!-- Header -->
     <header>
         <div class="header_container">
+            <div class="header_container_block-logo">
             <a href="/" class="header-logo-link">
                 <img class="header_logo" src="./img/vavada_logo.svg" alt="Vavada Logo" width="200">
             </a>
+            <button class="burger-btn" aria-label="Toggle navigation">
+                <span class="burger-icon"></span>
+            </button>
+           </div>
             <nav class="header-nav">
                 <a class="header-nav__link" href="#">Home</a>
                 <a class="header-nav__link" href="#">Review</a>
                 <a class="header-nav__link" href="#">Bonus</a>
                 <a class="header-nav__link" href="#">Spins</a>
             </nav>
-            <div class="auth-buttons">
-                <button class="btn btn_login">Login</button>
-                <button class="btn btn_registration">Registration</button>
-            </div>
-        </div>
 
+
+                <div class="auth-buttons">
+                    <button class="btn btn_login">Log in</button>
+                    <button class="btn btn_registration">Registration</button>
+                    <!-- Burger Menu Button -->
+                </div>
+
+
+        </div>
     </header>
 
     <!-- Content -->
@@ -100,6 +109,8 @@
         </div>
     </footer>
 
+    
+    <script src="./js/app.js" async></script>
 </body>
 
 </html>
