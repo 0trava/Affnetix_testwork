@@ -5,14 +5,17 @@
   }
 
   body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #252536f2;
+    background-color: #212132;
+    background-image: url(../img/body_strips.526a529….svg);
+    background-repeat: repeat;
     color: #fff;
+    font-family: Muller, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
   }
 
   header, footer {
-    background: #222;
+    background-color: #252536f2;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -20,6 +23,170 @@
     flex-wrap: wrap;
   }
 
-header {
-    height: 50px;
+  /* HEADER */
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    z-index: 1000;
+    padding: 0 1rem;
+    height: 80px;
+    box-sizing: border-box;
+  }
+  
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* HEADER адаптивність*/
+  @media (max-width: 1200px) {
+    .header_container {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header_container {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .header_container {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: auto;
+      padding: 1rem;
+      gap: 0.5rem;
+    }
+  
+    nav {
+      margin: 0.5rem 0;
+    }
+  
+    .auth-buttons {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+
+
+  /* HEADER LOGO */
+
+  .header-logo-link {
+    display: inline-block; /* Це дозволяє зробити логотип інтерактивним */
+    text-decoration: none; /* Відключає стандартне підкреслення лінка */
+  }
+
+  .header_logo{
+    transition: all 0.3s ease; 
+  }
+
+  .header_logo:hover, .header_logo:focus {
+    scale: 1.05;
+  }
+
+  /* HEADER NAVIGATION */
+
+  .header-nav {
+
+  }
+
+  .header-nav__link {
+    font-family: Muller, sans-serif;
+    font-size: 16px;
+
+    text-decoration: none;
+    color: inherit; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    padding: 0.5rem 1rem; 
+    transition: all 0.3s ease; 
+    
+  }
+
+  .header-nav__link:hover {
+    color: #fe284a; 
+  }
+
+
+
+
+
+  /* HEADER BUTTONS STYLE*/
+  .auth-buttons {
+    display: flex;
+    gap: 1rem;
+
+
+  }
+
+  .btn {
+    align-items: center;
+    /* background-color: #4d5a85; */
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: Muller, sans-serif;
+    font-size: 16px;
+    height: 40px;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height: 22px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all 0.3s ease; 
+  }
+
+
+/* BUTTON REGISTRATION */
+
+.btn_registration {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    
 }
+
+.btn_registration:hover, .btn_registration:focus {
+    box-shadow: 0 4px 0 0 #f5f5f51e, 0 8px 5px 0 #000, inset 0 20px 20px -4px #fff6;
+  }
+
+
+  /* BUTTON LOGIN */
+
+  .btn_login {
+    background-color: #fe284a;
+    box-shadow: 0 4px 0 0 #871628, 0 5px 5px 0 #000;
+    font-weight: 800;
+  }
+
+  .btn_login:hover, .btn_login:focus {
+    box-shadow: 0 4px 0 0 #871628, 0 8px 5px 0 #000, inset 0 20px 20px -4px #fff6;
+  }
+
+  .btn_login:active {
+    box-shadow: inset 0 2px 0 0 #871628, inset 0 0 0 20px #0003;
+    transform: translateY(4px);
+  }
