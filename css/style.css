@@ -32,8 +32,7 @@
 
 body {
     background-color: var(--color-bg-dark);
-    background-image: url(../img/body_strips.526a529….svg);
-    background-repeat: repeat;
+
     color: var(--color-white);
     font-family: Muller, sans-serif;
     font-size: 16px;
@@ -490,6 +489,10 @@ header {
         justify-content: space-evenly;
     }
 
+    .header-nav.active {
+        top: 40px !important;
+    }
+
     .header_container_block-logo {
         display: flex;
         width: 100%;
@@ -529,6 +532,10 @@ header {
         margin: 0.5rem 0;
     }
 
+    .header-nav.active {
+        top: 40px !important;
+    }
+
     .auth-buttons {
         display: flex;
         gap: 0.5rem;
@@ -549,6 +556,58 @@ header {
         flex-direction: column;
         align-items: center;
         gap: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    header {
+        height: 120px; /* зменшити висоту хедера */
+    }
+
+    .header_container {
+        padding: 0 0.5rem; /* зменшити відступи */
+    }
+
+    .header-nav.active {
+        top: 40px !important;
+    }
+
+    .header_logo {
+        width: 180px; /* зменшити розмір логотипу */
+    }
+
+    .header-nav__link {
+        font-size: 14px; /* зменшити розмір шрифта навігації */
+        padding: 0.5rem; /* зменшити відступи в навігаційних посиланнях */
+    }
+
+    .auth-buttons {
+        gap: 0.5rem; /* зменшити відстань між кнопками */
+    }
+
+    .burger-btn {
+        width: 25px; /* зменшити ширину бургер-меню */
+        height: 3px; /* зменшити висоту бургер-меню */
+    }
+
+    .burger-icon {
+        width: 25px; /* зменшити ширину бургер-іконки */
+    }
+
+    .footer-nav_link {
+        font-size: 14px; /* зменшити розмір шрифта в футері */
+    }
+
+    .footer_nav {
+        flex-direction: column; /* зробити футер вертикальним */
+        gap: 15px; /* зменшити відстань між елементами */
+    }
+
+    .btn {
+        font-size: 14px;
+        height: 40px;
+        padding: 0 20px;
+
     }
 }
 
